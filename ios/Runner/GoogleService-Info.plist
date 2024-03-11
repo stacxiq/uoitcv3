@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1024841860416-sfi2neco1lfq2ailhnsb7po18g3htg98.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1024841860416-sfi2neco1lfq2ailhnsb7po18g3htg98</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCKGT0iek5OxBENceyBK3-AWk5euBheoVA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1024841860416</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>iq.edu.uoitc</string>
+	<key>PROJECT_ID</key>
+	<string>uoitc-6746d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>uoitc-6746d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1024841860416:ios:90fbc818f528fa8e5be6a5</string>
+	<key>DATABASE_URL</key>
+	<string>https://uoitc-6746d.firebaseio.com</string>
+</dict>
+</plist>
