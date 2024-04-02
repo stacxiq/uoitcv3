@@ -5,7 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hive/hive.dart';
 import 'package:iconly/iconly.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:intl/intl.dart' as intl;
 import 'package:uoitc_new_app/core/extensions/extensions.dart';
 import 'package:uoitc_new_app/core/routing/routes.dart';
@@ -143,56 +142,6 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   const VerticalSpacing(height: 30),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: HexColor.fromHex('#FFFFFF'),
-                      borderRadius: BorderRadius.circular(15.r),
-                      border: Border.all(
-                        color: Colors.grey.shade300.withOpacity(.4),
-                      ),
-                    ),
-                    height: 50.h,
-                    margin: EdgeInsets.only(left: 30.w),
-                    padding: EdgeInsets.only(right: 13.w),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Expanded(
-                          child: TextFormField(
-                            decoration: InputDecoration(
-                              border: InputBorder.none,
-                              hintText: 'بحث عن خبر ...',
-                              hintStyle: TextStyle(
-                                fontSize: 12.sp,
-                                color: HexColor.fromHex(
-                                  '#A7A7A7',
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          height: 49.h,
-                          width: 47.w,
-                          decoration: BoxDecoration(
-                              color: HexColor.fromHex('#5474FD'),
-                              borderRadius: BorderRadius.circular(15.r)),
-                          child: SizedBox(
-                            width: 28.w,
-                            height: 28.h,
-                            child: Center(
-                              child: SvgPicture.asset(
-                                'assets/svg/search.svg',
-                                width: 28.w,
-                                height: 28.h,
-                              ),
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  const VerticalSpacing(height: 30),
                   Padding(
                     padding: EdgeInsets.only(left: 18.w),
                     child: Row(
@@ -237,7 +186,7 @@ class HomePage extends StatelessWidget {
                       }, success: (data) {
                         List<newsModel.News> news = data;
                         return SizedBox(
-                          height: 320.h,
+                          height: 340.h,
                           child: ListView.builder(
                             clipBehavior: Clip.none,
                             scrollDirection: Axis.horizontal,
@@ -251,7 +200,7 @@ class HomePage extends StatelessWidget {
                                   );
                                 },
                                 child: Container(
-                                  height: 304.h,
+                                  height: 340.h,
                                   width: 255.w,
                                   margin: EdgeInsets.only(left: 20.w),
                                   decoration: BoxDecoration(
@@ -279,13 +228,13 @@ class HomePage extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       SizedBox(
-                                        height: 185.h,
+                                        height: 195.h,
                                         width: 231.w,
                                         child: ClipRRect(
                                           borderRadius:
                                               BorderRadius.circular(25.r),
                                           child: FittedBox(
-                                            fit: BoxFit.cover,
+                                            fit: BoxFit.fill,
                                             child: Image.network(
                                               news[index].images!.first.path,
                                             ),
@@ -294,7 +243,7 @@ class HomePage extends StatelessWidget {
                                       ),
                                       const VerticalSpacing(height: 10),
                                       SizedBox(
-                                        height: 36.h,
+                                        height: 45.h,
                                         child: Text(
                                           news[index].title,
                                           maxLines: 2,
@@ -447,7 +396,7 @@ class HomePage extends StatelessWidget {
                         );
                       }, success: (videos) {
                         return SizedBox(
-                          height: 120.h,
+                          height: 130.h,
                           child: ListView.builder(
                             clipBehavior: Clip.none,
                             scrollDirection: Axis.horizontal,
@@ -458,7 +407,7 @@ class HomePage extends StatelessWidget {
                                   launchInBrowser(videos[index].url);
                                 },
                                 child: Container(
-                                  height: 120.h,
+                                  height: 130.h,
                                   width: 255.w,
                                   margin: EdgeInsets.only(left: 20.w),
                                   decoration: BoxDecoration(
@@ -533,7 +482,7 @@ class HomePage extends StatelessWidget {
                                             const VerticalSpacing(height: 10),
                                             Text(
                                               videos[index].title,
-                                              maxLines: 3,
+                                              maxLines: 2,
                                               textAlign: TextAlign.right,
                                               textDirection: TextDirection.rtl,
                                               style: TextStyle(

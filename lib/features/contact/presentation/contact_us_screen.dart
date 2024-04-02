@@ -122,7 +122,7 @@ class ContactUsScreen extends StatelessWidget {
                           ),
                           const VerticalSpacing(height: 15),
                           SizedBox(
-                            height: size.height * 0.25,
+                            height: size.height * 0.2,
                             child: GoogleMap(
                               mapType: MapType.normal,
                               myLocationEnabled: true,

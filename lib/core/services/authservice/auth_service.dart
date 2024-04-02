@@ -8,6 +8,8 @@ abstract class AuthService {
 
   String getUsername();
   String getToken();
+
+  logout();
   AuthService();
 
   factory AuthService.impl() {
@@ -51,5 +53,16 @@ class AuthServiceImpl extends AuthService {
   String getToken() {
     var box = Hive.box('authBox');
     return box.get('token', defaultValue: null) ?? '';
+  }
+
+  @override
+  logout() {
+    // TODO: implement logout
+    var box = Hive.box('authBox');
+    box.put('token', null);
+    box.put('username', null);
+    box.delete('token');
+    box.delete('username');
+    box.clear();
   }
 }

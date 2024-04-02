@@ -121,6 +121,7 @@ class _TabsScreenState extends State<TabsScreen> {
               ),
             ),
             label: 'الكليات',
+            
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(

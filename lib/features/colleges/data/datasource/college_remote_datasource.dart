@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:uoitc_new_app/core/networking/dio_factory.dart';
 import 'package:uoitc_new_app/features/colleges/data/models/college.dart';
 

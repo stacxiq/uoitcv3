@@ -8,7 +8,7 @@
 PRODUCT_NAME = uoitc_new_app
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.advicts.uoitcNewApp
+PRODUCT_BUNDLE_IDENTIFIER = iq.edu.uoitc
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2024 com.advicts. All rights reserved.

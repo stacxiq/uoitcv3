@@ -77,7 +77,7 @@ class CollegeScreen extends StatelessWidget {
                                 colleges.utilities?[0].extraInformation ?? '',
                                 textAlign: TextAlign.justify,
                                 style: TextStyle(
-                                  fontSize: 12.5.sp,
+                                  fontSize: 10.5.sp,
                                   fontWeight: FontWeight.w400,
                                   color: Colors.black,
                                 ),

@@ -16,12 +16,15 @@ import 'package:uoitc_new_app/features/home/data/repositories/news_repository.da
 import 'package:uoitc_new_app/features/home/data/repositories/videos_repository.dart';
 import 'package:uoitc_new_app/features/home/logic/videos_bloc/videos_bloc.dart';
 import 'package:uoitc_new_app/features/home/logic/videos_bloc/videos_event.dart';
-import 'package:uoitc_new_app/features/home/presentation/home_screen.dart';
 import 'package:uoitc_new_app/features/home/logic/news_bloc/news_bloc.dart';
 import 'package:uoitc_new_app/features/home/logic/news_bloc/news_event.dart';
 import 'package:uoitc_new_app/features/home/presentation/news_detail_screen.dart';
 import 'package:uoitc_new_app/features/home/presentation/news_screen_page.dart';
 import 'package:uoitc_new_app/features/home/presentation/video_screen_page.dart';
+import 'package:uoitc_new_app/features/salary/data/datasource/salary_remote_datasource.dart';
+import 'package:uoitc_new_app/features/salary/data/repositories/salary_repository.dart';
+import 'package:uoitc_new_app/features/salary/logic/salary_bloc/salary_bloc.dart';
+import 'package:uoitc_new_app/features/salary/logic/salary_bloc/salary_event.dart';
 import 'package:uoitc_new_app/features/salary/presentation/salary_screen.dart';
 import 'package:uoitc_new_app/features/tabs/tabs.dart';
 import 'package:uoitc_new_app/features/update_employee/data/datasource/structure_data_source.dart';
@@ -85,17 +88,26 @@ class AppRouter {
         );
       case Routes.loginScreen:
         return MaterialPageRoute(
-          builder: (_) => BlocProvider(
-              create: (context) => AuthBloc(
-                    AuthRepository(
-                      authRemoteDataSource: AuthRemoteDataSourceImpl(),
-                    ),
-                  ),
-              child: LoginScreen()),
+          builder: (BuildContext context) => BlocProvider(
+            key: const Key('login_bloc'),
+            create: (context) => AuthBloc(
+              AuthRepository(
+                authRemoteDataSource: AuthRemoteDataSourceImpl(),
+              ),
+            ),
+            child: LoginScreen(),
+          ),
         );
       case Routes.salaryScreen:
         return MaterialPageRoute(
-          builder: (_) => const SalaryScreen(),
+          builder: (_) => BlocProvider(
+            create: (context) => SalaryBloc(
+              SalaryRepository(
+                salaryRemoteDataSource: SalaryRemoteDataSourceImpl(),
+              ),
+            )..add(const SalaryEvent.fetch()),
+            child: SalaryScreen(),
+          ),
         );
       case Routes.employeeFormScreen:
         return MaterialPageRoute(

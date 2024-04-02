@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "1024841860416",
+    "firebase_url": "https://uoitc-6746d.firebaseio.com",
+    "project_id": "uoitc-6746d",
+    "storage_bucket": "uoitc-6746d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024841860416:android:2896c1d07c5513825be6a5",
+        "android_client_info": {
+          "package_name": "com.advicts.uoitc_new_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024841860416-3jk3c340qj8u74js9t0rj1189g9258hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYUF8owgoa8Y1JXGOIaMlhbtLBQV2kT1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024841860416-3jk3c340qj8u74js9t0rj1189g9258hf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1024841860416-ilvsp9pbrbi0nqnvm1ofpm8ld05u798b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.recipes-firebase-2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024841860416:android:2389bcb6e3f70d3c5be6a5",
+        "android_client_info": {
+          "package_name": "iq.edu.uoitc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024841860416-3jk3c340qj8u74js9t0rj1189g9258hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYUF8owgoa8Y1JXGOIaMlhbtLBQV2kT1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024841860416-3jk3c340qj8u74js9t0rj1189g9258hf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1024841860416-ilvsp9pbrbi0nqnvm1ofpm8ld05u798b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.recipes-firebase-2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

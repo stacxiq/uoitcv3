@@ -3,13 +3,10 @@ import 'package:delightful_toast/toast/components/toast_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:uoitc_new_app/core/extensions/extensions.dart';
 import 'package:uoitc_new_app/core/routing/routes.dart';
-import 'package:uoitc_new_app/core/static/colors.dart';
 import 'package:uoitc_new_app/features/auth/data/models/user.dart';
 import 'package:uoitc_new_app/features/auth/logic/auth_bloc.dart';
-import 'package:uoitc_new_app/features/auth/logic/auth_event.dart';
 import 'package:uoitc_new_app/features/auth/logic/auth_state.dart';
 
 class LoginSubmitButton extends StatelessWidget {

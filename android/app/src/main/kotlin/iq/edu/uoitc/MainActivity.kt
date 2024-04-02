@@ -1,4 +1,4 @@
-package com.advicts.uoitc_new_app
+package iq.edu.uoitc
 
 import io.flutter.embedding.android.FlutterActivity
 
